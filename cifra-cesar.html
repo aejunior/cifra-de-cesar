@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<meta name="author" content="ebisai, user.emerson@outlook.com">
+	<meta name="language" content="PT">
+	<title>Cifra de César</title>
+</head>
+<body>
+	<div class="container">
+		<form id="formCipher">
+			<div>
+				<label for="rangeCipher">Deslocamento:</label>
+				<span id="rangeValue">0</span>
+				<input id="rangeCipher" class="range" type="range" name="" value="0" min="0" max="25" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></input>
+			</div>
+			<label for="inputCipher">Insira seu nome:</label>
+			<input type="text" id="inputCipher">
+			<input type="submit" value="Enviar">
+		</form>
+		<div id="message-encrypted">
+		</div>
+		<script 
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+		</script>
+		<script src="static/javascript/javascript.js"></script>
+	</div>
+	<footer>
+		<ul>
+			<span>Referências: </span>
+			<li>
+				<a href="https://www.geogebra.org/m/kF6WJReU" target="_blank">geogebra.org</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>
